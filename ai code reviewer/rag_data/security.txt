@@ -1,0 +1,7 @@
+Security Checklist:
+- Don't store plain passwords
+- Validate user input
+- Avoid SQL injection
+- Avoid hardcoded secrets
+- Use authentication
+- Proper error handling

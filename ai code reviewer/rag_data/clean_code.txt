@@ -1,0 +1,8 @@
+Clean Code Rules:
+- Functions should be small and do one thing
+- Use meaningful variable names
+- Avoid deep nesting
+- Don't repeat code (DRY)
+- Handle errors properly
+- Remove unused variables
+- Proper indentation and formatting

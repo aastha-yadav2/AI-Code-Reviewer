@@ -1,0 +1,6 @@
+Performance Rules:
+- Avoid nested loops
+- Use proper data structures
+- Optimize database calls
+- Reduce time complexity
+- Use caching
