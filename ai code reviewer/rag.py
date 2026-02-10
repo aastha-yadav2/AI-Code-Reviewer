@@ -1,8 +1,20 @@
+# -------- Auto install safety for Render --------
+import subprocess
+import sys
+
+try:
+    from sentence_transformers import SentenceTransformer
+except:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "sentence-transformers"])
+
+
+# -------- Main Imports --------
 from langchain_community.vectorstores import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import CharacterTextSplitter
 import os
+
 
 # ----- BASE PATH -----
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
