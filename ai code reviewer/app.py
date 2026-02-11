@@ -1,5 +1,5 @@
 import streamlit as st
-from rag import get_relevant_knowledge, create_vector_db
+#from rag import get_relevant_knowledge, create_vector_db
 from groq import Groq
 import os
 from dotenv import load_dotenv
@@ -24,8 +24,8 @@ with st.sidebar:
 load_dotenv()
 
 # ----- RAG DATABASE INITIALIZE -----
-if not os.path.exists("db"):
-    create_vector_db()
+#if not os.path.exists("db"):
+ #   create_vector_db()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
@@ -58,7 +58,11 @@ if st.button("Review Code"):
     with st.spinner("AI Agents analyzing code..."):
 
         # ----- RAG CONTEXT -----
-        context = get_relevant_knowledge(code)
+        context = """
+Follow clean code, SOLID principles, security best practices,
+input validation, performance optimization and refactoring standards.
+"""
+
 
         # =============== AGENT PROMPTS ===============
 
@@ -155,3 +159,4 @@ if st.button("Review Code"):
 
     st.markdown("## ✨ Refactored Code (Refactor Agent)")
     st.code(ref_res.choices[0].message.content)
+
