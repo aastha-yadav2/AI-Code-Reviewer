@@ -3,11 +3,3 @@ groq
 python-dotenv
 PyGithub
 requests
-
-langchain
-langchain-community
-langchain-huggingface
-langchain-text-splitters
-
-sentence-transformers==2.2.2
-chromadb==0.4.22
