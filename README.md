@@ -6,7 +6,7 @@ A smart multi-agent AI system that reviews code, detects bugs, security issues, 
 
 ## 🚀 Live Demo
 
-👉 **Deployed App:** *<PASTE YOUR STREAMLIT URL HERE>*
+👉 **Deployed App:** *<https://ai-code-reviewer-weqt5bvaapkgsx8w9pny8f.streamlit.app/>*
 
 ---
 
